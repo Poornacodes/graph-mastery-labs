@@ -7,3 +7,5 @@ ch03-algorithms/karate.png
 ch07-modeling-etl/data/
 examples/athena/results.md
 ch12-production/.env
+import-demo/
+ch14-neo4j/backups/

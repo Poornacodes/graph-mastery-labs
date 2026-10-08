@@ -91,6 +91,8 @@ def main():
     run("Ch 13 Try It 13.1 (local)", ["ch13-neptune/try_it_13_1_local.py"],
         needs=[neo4j, fuseki])
     if not quick:
+        run("Ch 14 Try It 14.1 (PROFILE lab)", ["ch14-neo4j/profile_lab.py"],
+            needs=[neo4j])
         run("App E Athena pipeline", ["run_all.py"], cwd=ROOT / "examples/athena",
             needs=[neo4j])
 

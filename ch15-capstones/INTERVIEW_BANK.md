@@ -1,6 +1,6 @@
 # Interview question bank
 
-Grouped by the themes in Section 14.5. Practice out loud; for design
+Grouped by the themes in Section 15.5. Practice out loud; for design
 questions, state the queries you need before you draw the model. The chapter
 references point to where the book covers each answer.
 

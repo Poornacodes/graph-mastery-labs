@@ -4,7 +4,7 @@ The companion repository for ***Graph Mastery for the AI Era: From Graph
 Theory to GraphRAG*** by Poorna. Every code listing in the book, every
 *Try It Yourself* lab with its data and a worked solution, the end-to-end
 GraphRAG example from Appendix E, and the capstone rubric, briefs, and
-interview bank from Chapter 14.
+interview bank from Chapter 15.
 
 Everything runs on your own machine with free, open-source software. No paid
 account is needed: the labs that use a language model also run in an
@@ -47,7 +47,8 @@ Neo4j Browser is at http://localhost:7474 (user `neo4j`, password
 | Ch 11 | `ch11-llm-kg/` | Listings 11.1–11.2; Try It 11.1: extract, resolve, load, query, validate |
 | Ch 12 | `ch12-production/` | Listing 12.1 Compose stack; Try It 12.1 steps and RPO/RTO journal |
 | Ch 13 | `ch13-neptune/` | Neptune notebook (Listings 13.1–13.2), bulk-load files, teardown checklist, and a free local path (Try It 13.1) |
-| Ch 14 | `ch14-capstones/` | Full rubric (Table 14.1), three capstone briefs, interview bank, two-minute-story template |
+| Ch 14 | `ch14-neo4j/` | Neo4j operations labs (Try It 14.1): memory sizing, PROFILE diagnosis and fix (Listing 14.2), `neo4j-admin` bulk import of 1M nodes / 5M relationships, offline backup and verified restore |
+| Ch 15 | `ch15-capstones/` | Full rubric (Table 15.1), three capstone briefs, interview bank, two-minute-story template |
 | App E | `examples/athena/` | Athena, the end-to-end GraphRAG knowledge platform |
 
 Appendix A's setup is `docker-compose.yml`, `requirements.txt`, and
