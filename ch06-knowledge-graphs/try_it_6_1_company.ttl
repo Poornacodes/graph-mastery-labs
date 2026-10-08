@@ -1,0 +1,22 @@
+# Try It Yourself 6.1 — a small company ontology and dataset.
+@prefix ex:   <http://example.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+
+# --- ontology -------------------------------------------------------------
+ex:Employee    rdfs:subClassOf foaf:Person .
+ex:worksAt     rdfs:domain ex:Employee ; rdfs:range ex:Organization .
+ex:colleagueOf a owl:SymmetricProperty ; rdfs:domain ex:Employee .
+ex:ancestorOf  a owl:TransitiveProperty .
+
+# --- data: note that nobody is declared a foaf:Person ----------------------
+ex:acme  a ex:Organization ; foaf:name "Acme Corp" .
+ex:alice foaf:name "Alice" ; ex:worksAt ex:acme ; ex:colleagueOf ex:bob .
+ex:bob   foaf:name "Bob"   ; ex:worksAt ex:acme .
+ex:carol foaf:name "Carol" ; ex:worksAt ex:acme .
+
+ex:dora   foaf:name "Dora"   ; ex:ancestorOf ex:elias .
+ex:elias  foaf:name "Elias"  ; ex:ancestorOf ex:farida .
+ex:farida foaf:name "Farida" ; ex:ancestorOf ex:gus .
+ex:gus    foaf:name "Gus" .

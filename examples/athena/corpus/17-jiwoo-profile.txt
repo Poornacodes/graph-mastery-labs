@@ -1,0 +1,1 @@
+Ji-woo Park is a member of the Perception Team and maintains VisionKit's label-reading models.

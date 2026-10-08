@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Athena</title>
+<style>
+ body{font-family:sans-serif;margin:16px;max-width:960px}
+ input{width:70%;padding:6px} pre{white-space:pre-wrap;background:#f6f6f6;padding:8px}
+ #net{height:420px;border:1px solid #ccc}
+</style>
+</head>
+<body>
+<h2>Athena — ask Helios</h2>
+<input id="q" value="Who is at risk of losing context now that Dr. Vance left the Orion project?">
+<button onclick="ask()">Ask</button>
+<pre id="answer"></pre>
+<p>Cited entities (click one to see its neighborhood): <span id="cites"></span></p>
+<div id="net"></div>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<script>
+async function ask() {
+  const q = document.getElementById('q').value;
+  const d = await (await fetch('/ask?q=' + encodeURIComponent(q))).json();
+  document.getElementById('answer').textContent = d.answer;
+  const names = [...new Set(d.citations.flat())];
+  document.getElementById('cites').innerHTML = names.map(n =>
+    `<a href="#" onclick="show('${n.replace(/'/g, "\\'")}');return false">${n}</a>`).join(', ');
+  if (names.length) show(names[0]);
+}
+async function show(name) {
+  const d = await (await fetch('/graph/entity/' + encodeURIComponent(name))).json();
+  new vis.Network(document.getElementById('net'),
+    {nodes: new vis.DataSet(d.nodes), edges: new vis.DataSet(d.edges)},
+    {edges: {arrows: 'to', font: {size: 9}}});
+}
+</script>
+</body>
+</html>

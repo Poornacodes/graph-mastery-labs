@@ -1,0 +1,25 @@
+{
+  "_note": "What a model returned for each chunk (recorded so the lab runs offline). It contains the duplicate names and the out-of-schema relation a real extractor produces: 'J. Tan' / 'Joanna Tan', 'Larkspur' / 'Larkspur Robotics', and a LAUNCHED relation that the schema does not allow.",
+  "01-larkspur.txt": [
+    {"head": "Joanna Tan", "head_type": "Person", "relation": "FOUNDED", "tail": "Larkspur Robotics", "tail_type": "Company"},
+    {"head": "Larkspur Robotics", "head_type": "Company", "relation": "COMPETES_WITH", "tail": "Quill Automation", "tail_type": "Company"}
+  ],
+  "02-quill.txt": [
+    {"head": "Marcus Reed", "head_type": "Person", "relation": "FOUNDED", "tail": "Quill Automation", "tail_type": "Company"},
+    {"head": "Quill Automation", "head_type": "Company", "relation": "LAUNCHED", "tail": "Quill Picker", "tail_type": "Product"},
+    {"head": "Priya Nair", "head_type": "Person", "relation": "WORKS_AT", "tail": "Quill Automation", "tail_type": "Company"}
+  ],
+  "03-acquisition.txt": [
+    {"head": "Larkspur", "head_type": "Company", "relation": "ACQUIRED", "tail": "Tern Vision", "tail_type": "Company"},
+    {"head": "J. Tan", "head_type": "Person", "relation": "WORKS_AT", "tail": "Larkspur", "tail_type": "Company"}
+  ],
+  "04-tern.txt": [
+    {"head": "Omar Haddad", "head_type": "Person", "relation": "FOUNDED", "tail": "Tern Vision", "tail_type": "Company"},
+    {"head": "Omar Haddad", "head_type": "Person", "relation": "WORKS_AT", "tail": "Larkspur Robotics", "tail_type": "Company"}
+  ],
+  "05-market.txt": [
+    {"head": "Quill Automation", "head_type": "Company", "relation": "COMPETES_WITH", "tail": "Larkspur Robotics", "tail_type": "Company"},
+    {"head": "Quill Automation", "head_type": "Company", "relation": "COMPETES_WITH", "tail": "Halyard Systems", "tail_type": "Company"},
+    {"head": "Larkspur Robotics", "head_type": "Company", "relation": "COMPETES_WITH", "tail": "Halyard Systems", "tail_type": "Company"}
+  ]
+}

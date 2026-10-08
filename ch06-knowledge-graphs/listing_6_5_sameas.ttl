@@ -1,0 +1,6 @@
+# Listing 6.5 — Linking a local entity to Wikidata
+@prefix ex:  <http://example.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# illustrative ID
+ex:alice owl:sameAs <http://www.wikidata.org/entity/Q12345> .

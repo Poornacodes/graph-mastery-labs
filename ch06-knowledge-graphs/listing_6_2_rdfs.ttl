@@ -1,0 +1,9 @@
+# Listing 6.2 — An RDFS schema
+@prefix ex:   <http://example.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:Employee rdfs:subClassOf foaf:Person .   # every Employee is a Person
+ex:Manager  rdfs:subClassOf ex:Employee .   # every Manager is an Employee
+ex:worksAt  rdfs:domain ex:Employee ;       # subject of worksAt: Employee
+            rdfs:range  ex:Organization .   # object: an Organization

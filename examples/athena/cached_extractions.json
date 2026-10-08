@@ -1,0 +1,285 @@
+{
+ "_note": "What an LLM returned for each chunk with the Listing E.2 prompt, recorded so the pipeline runs offline (LLM_PROVIDER=offline). Like real output it uses inconsistent names ('R. Okafor', 'Rina Okafor', 'Okafor', 'Dr. Vance', 'Orion', 'Atlas'), includes one relation outside the schema (LOCATED_IN), and one chunk's reply is not valid JSON.",
+ "01-perception-team.txt#0": [
+  {
+   "head": "Perception Team",
+   "head_type": "Team",
+   "relation": "BUILDS",
+   "tail": "VisionKit",
+   "tail_type": "Component"
+  },
+  {
+   "head": "Nadia Rahman",
+   "head_type": "Person",
+   "relation": "MEMBER_OF",
+   "tail": "Perception Team",
+   "tail_type": "Team"
+  },
+  {
+   "head": "Tomas Lind",
+   "head_type": "Person",
+   "relation": "MEMBER_OF",
+   "tail": "Perception Team",
+   "tail_type": "Team"
+  }
+ ],
+ "02-motion-team.txt#0": [
+  {
+   "head": "Mei Chen",
+   "head_type": "Person",
+   "relation": "MEMBER_OF",
+   "tail": "Motion Team",
+   "tail_type": "Team"
+  },
+  {
+   "head": "Luis Ortega",
+   "head_type": "Person",
+   "relation": "MEMBER_OF",
+   "tail": "Motion Team",
+   "tail_type": "Team"
+  },
+  {
+   "head": "Okafor",
+   "head_type": "Person",
+   "relation": "MEMBER_OF",
+   "tail": "Motion Team",
+   "tail_type": "Team"
+  },
+  {
+   "head": "Motion Team",
+   "head_type": "Team",
+   "relation": "BUILDS",
+   "tail": "MotionCore",
+   "tail_type": "Component"
+  }
+ ],
+ "03-platform-team.txt#0": [
+  {
+   "head": "Platform Team",
+   "head_type": "Team",
+   "relation": "BUILDS",
+   "tail": "FleetOS",
+   "tail_type": "Component"
+  },
+  {
+   "head": "Platform Team",
+   "head_type": "Team",
+   "relation": "BUILDS",
+   "tail": "SensorHub",
+   "tail_type": "Component"
+  },
+  {
+   "head": "Aaron Brooks",
+   "head_type": "Person",
+   "relation": "MEMBER_OF",
+   "tail": "Platform Team",
+   "tail_type": "Team"
+  },
+  {
+   "head": "Grace Kim",
+   "head_type": "Person",
+   "relation": "MEMBER_OF",
+   "tail": "Platform Team",
+   "tail_type": "Team"
+  }
+ ],
+ "04-orion-staffing.txt#0": [
+  {
+   "head": "Dr. Vance",
+   "head_type": "Person",
+   "relation": "WORKS_ON",
+   "tail": "Project Orion",
+   "tail_type": "Project"
+  },
+  {
+   "head": "Tomas Lind",
+   "head_type": "Person",
+   "relation": "WORKS_ON",
+   "tail": "Project Orion",
+   "tail_type": "Project"
+  },
+  {
+   "head": "Mei Chen",
+   "head_type": "Person",
+   "relation": "WORKS_ON",
+   "tail": "Project Orion",
+   "tail_type": "Project"
+  },
+  {
+   "head": "Luis Ortega",
+   "head_type": "Person",
+   "relation": "WORKS_ON",
+   "tail": "Orion",
+   "tail_type": "Project"
+  }
+ ],
+ "05-orion-leadership.txt#0": [
+  {
+   "head": "R. Okafor",
+   "head_type": "Person",
+   "relation": "LEADS",
+   "tail": "Project Orion",
+   "tail_type": "Project"
+  }
+ ],
+ "06-atlas.txt#0": [
+  {
+   "head": "Sam Patel",
+   "head_type": "Person",
+   "relation": "LEADS",
+   "tail": "Project Atlas",
+   "tail_type": "Project"
+  },
+  {
+   "head": "Ji-woo Park",
+   "head_type": "Person",
+   "relation": "WORKS_ON",
+   "tail": "Atlas",
+   "tail_type": "Project"
+  },
+  {
+   "head": "Aaron Brooks",
+   "head_type": "Person",
+   "relation": "WORKS_ON",
+   "tail": "Atlas",
+   "tail_type": "Project"
+  }
+ ],
+ "07-orion-dependencies.txt#0": [
+  {
+   "head": "Orion",
+   "head_type": "Project",
+   "relation": "DEPENDS_ON",
+   "tail": "MotionCore",
+   "tail_type": "Component"
+  },
+  {
+   "head": "MotionCore",
+   "head_type": "Component",
+   "relation": "DEPENDS_ON",
+   "tail": "SensorHub",
+   "tail_type": "Component"
+  }
+ ],
+ "08-atlas-dependencies.txt#0": [
+  {
+   "head": "Atlas",
+   "head_type": "Project",
+   "relation": "DEPENDS_ON",
+   "tail": "VisionKit",
+   "tail_type": "Component"
+  },
+  {
+   "head": "Atlas",
+   "head_type": "Project",
+   "relation": "DEPENDS_ON",
+   "tail": "FleetOS",
+   "tail_type": "Component"
+  },
+  {
+   "head": "VisionKit",
+   "head_type": "Component",
+   "relation": "DEPENDS_ON",
+   "tail": "SensorHub",
+   "tail_type": "Component"
+  }
+ ],
+ "09-vance-departure.txt#0": [
+  {
+   "head": "Elena Vance",
+   "head_type": "Person",
+   "relation": "WORKS_ON",
+   "tail": "Project Orion",
+   "tail_type": "Project"
+  }
+ ],
+ "10-press-picker-launch.txt#0": [
+  {
+   "head": "Helios Picker launch announcement",
+   "head_type": "Announcement",
+   "relation": "ANNOUNCES",
+   "tail": "Helios Picker",
+   "tail_type": "Product"
+  },
+  {
+   "head": "Helios Picker",
+   "head_type": "Product",
+   "relation": "LOCATED_IN",
+   "tail": "logistics fair",
+   "tail_type": "Announcement"
+  }
+ ],
+ "11-press-picker-trial.txt#0": [
+  {
+   "head": "Helios Picker trial announcement",
+   "head_type": "Announcement",
+   "relation": "ANNOUNCES",
+   "tail": "Helios Picker",
+   "tail_type": "Product"
+  }
+ ],
+ "12-press-scanner-pilot.txt#0": [
+  {
+   "head": "Helios Scanner pilot announcement",
+   "head_type": "Announcement",
+   "relation": "ANNOUNCES",
+   "tail": "Helios Scanner",
+   "tail_type": "Product"
+  }
+ ],
+ "13-picker-architecture.txt#0": [
+  {
+   "head": "Helios Picker",
+   "head_type": "Product",
+   "relation": "DEPENDS_ON",
+   "tail": "MotionCore",
+   "tail_type": "Component"
+  }
+ ],
+ "14-scanner-architecture.txt#0": [
+  {
+   "head": "Helios Scanner",
+   "head_type": "Product",
+   "relation": "DEPENDS_ON",
+   "tail": "VisionKit",
+   "tail_type": "Component"
+  },
+  {
+   "head": "Helios Scanner",
+   "head_type": "Product",
+   "relation": "DEPENDS_ON",
+   "tail": "FleetOS",
+   "tail_type": "Component"
+  }
+ ],
+ "15-rina-profile.txt#0": [
+  {
+   "head": "Rina Okafor",
+   "head_type": "Person",
+   "relation": "MEMBER_OF",
+   "tail": "Motion Team",
+   "tail_type": "Team"
+  }
+ ],
+ "16-sam-profile.txt#0": [
+  {
+   "head": "Sam Patel",
+   "head_type": "Person",
+   "relation": "MEMBER_OF",
+   "tail": "Platform Team",
+   "tail_type": "Team"
+  }
+ ],
+ "17-jiwoo-profile.txt#0": [
+  {
+   "head": "Ji-woo Park",
+   "head_type": "Person",
+   "relation": "MEMBER_OF",
+   "tail": "Perception Team",
+   "tail_type": "Team"
+  }
+ ],
+ "18-onboarding.txt#0": "I could not find any entities of the requested types in this text, so there are no triples to return.",
+ "19-security-policy.txt#0": [],
+ "20-holidays.txt#0": []
+}

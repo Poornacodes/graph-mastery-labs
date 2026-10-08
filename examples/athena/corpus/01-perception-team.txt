@@ -1,0 +1,1 @@
+The Perception Team builds VisionKit, the camera-based object-recognition stack used across Helios robots. Nadia Rahman and Tomas Lind are members of the Perception Team.

@@ -1,0 +1,37 @@
+# The lab databases from Appendix A, as one stack:
+#   docker compose up -d                      # Neo4j + Fuseki
+#   docker compose --profile gremlin up -d    # ...plus JanusGraph (Chapter 5)
+# Passwords come from .env (copy .env.example); defaults match the book.
+services:
+  neo4j:
+    image: neo4j:5-community
+    container_name: gm-neo4j
+    environment:
+      NEO4J_AUTH: neo4j/${NEO4J_PASSWORD:-graphmastery}
+      NEO4J_PLUGINS: '["apoc","graph-data-science"]'
+      NEO4J_dbms_security_procedures_unrestricted: "apoc.*,gds.*"
+    ports: ["7474:7474", "7687:7687"]
+    volumes:
+      - neo4j_data:/data
+      - ./import:/var/lib/neo4j/import      # LOAD CSV reads from here
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:7474"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+
+  fuseki:
+    image: secoresearch/fuseki
+    container_name: gm-fuseki
+    environment:
+      ADMIN_PASSWORD: ${FUSEKI_PASSWORD:-graphmastery}
+    ports: ["3030:3030"]
+
+  janusgraph:
+    image: janusgraph/janusgraph:latest
+    container_name: gm-janusgraph
+    profiles: ["gremlin"]
+    ports: ["8182:8182"]
+
+volumes:
+  neo4j_data:

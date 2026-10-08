@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.pytest_cache/
+ch03-algorithms/karate.png
+ch07-modeling-etl/data/
+examples/athena/results.md
+ch12-production/.env

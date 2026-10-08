@@ -1,0 +1,27 @@
+# Listing 12.1 — A Docker Compose stack (database + API)
+# Stop the root lab stack first (it uses the same ports): from the repository
+# root, `docker compose down`. Then, here:  cp .env.example .env
+#                                           docker compose up -d --build
+services:
+  neo4j:
+    image: neo4j:5-community
+    environment:
+      NEO4J_AUTH: neo4j/${NEO4J_PASSWORD}
+      NEO4J_PLUGINS: '["apoc","graph-data-science"]'
+    ports: ["7474:7474", "7687:7687"]
+    volumes: [neo4j_data:/data]
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:7474"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+  api:
+    build: ./api
+    environment:
+      NEO4J_URI: bolt://neo4j:7687        # service name, not localhost
+      NEO4J_PASSWORD: ${NEO4J_PASSWORD}
+    ports: ["8000:8000"]
+    depends_on:
+      neo4j: { condition: service_healthy }
+volumes:
+  neo4j_data:

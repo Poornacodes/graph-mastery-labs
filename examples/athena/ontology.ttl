@@ -1,0 +1,22 @@
+# Listing E.1 — Athena's ontology (Turtle)
+@prefix ex:   <http://helios.example/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+
+# Classes
+ex:Person a rdfs:Class . ex:Team a rdfs:Class . ex:Project a rdfs:Class .
+ex:Component a rdfs:Class . ex:Product a rdfs:Class .
+ex:Announcement a rdfs:Class .
+
+# Relations (with domain/range so a reasoner can infer types)
+ex:worksOn   rdfs:domain ex:Person ; rdfs:range ex:Project .
+ex:leads     rdfs:domain ex:Person ; rdfs:range ex:Project .
+ex:memberOf  rdfs:domain ex:Person ; rdfs:range ex:Team .
+ex:builds    rdfs:domain ex:Team ; rdfs:range ex:Component .
+# Transitive, so dependency chains close. No domain: projects AND
+# components can depend on components.
+ex:dependsOn a owl:TransitiveProperty ;
+             rdfs:range ex:Component .
+ex:announces rdfs:domain ex:Announcement ; rdfs:range ex:Product .
+
+ex:Person owl:disjointWith ex:Team .        # catch contradictions

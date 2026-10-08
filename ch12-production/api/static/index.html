@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>User neighborhood</title>
+<style>body{font-family:sans-serif;margin:16px} #net{border:1px solid #ccc}</style>
+</head>
+<body>
+<h3>User 1 and the products they rated</h3>
+<!-- Listing 8.3 — Rendering with vis-network in the browser -->
+<script
+  src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js">
+</script>
+<div id="net" style="height:500px"></div>
+<script>
+fetch('/graph/users/1').then(r => r.json()).then(d => {
+  const nodes = new vis.DataSet(d.nodes);   // [{id, label, group}]
+  const edges = new vis.DataSet(d.edges);   // [{from, to, label}]
+  new vis.Network(document.getElementById('net'), {nodes, edges},
+    {edges: {arrows: 'to'}});
+});
+</script>
+</body>
+</html>

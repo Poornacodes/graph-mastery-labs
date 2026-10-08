@@ -1,0 +1,3 @@
+# Optional: Claude through the Anthropic API or Amazon Bedrock
+# (LLM_PROVIDER=anthropic or bedrock). Ollama and offline mode need nothing.
+anthropic

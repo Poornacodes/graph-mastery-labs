@@ -1,0 +1,22 @@
+# Listing 5.3 — SPARQL: direct, friend-of-friend, and reachability
+# (three queries; sparql_lab.py runs each one)
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX ex:   <http://example.org/>
+
+# Direct
+SELECT ?name WHERE {
+  ex:alice foaf:knows ?friend .
+  ?friend  foaf:name  ?name .
+}
+
+# Friend-of-friend via a property path (/ = sequence)
+SELECT DISTINCT ?name WHERE {
+  ex:alice foaf:knows/foaf:knows ?fof .
+  ?fof foaf:name ?name .
+}
+
+# Anyone reachable in one or more hops (+ = one-or-more)
+SELECT DISTINCT ?name WHERE {
+  ex:alice foaf:knows+ ?reachable .
+  ?reachable foaf:name ?name .
+}

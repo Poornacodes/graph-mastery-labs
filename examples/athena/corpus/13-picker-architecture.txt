@@ -1,0 +1,1 @@
+The Helios Picker is built on technology from Project Orion. The Helios Picker depends on MotionCore for every pick.

@@ -1,0 +1,6 @@
+~id,~label,name:String,age:Int
+p1,Person,Alice,30
+p2,Person,Bob,34
+p3,Person,Carol,27
+p4,Person,Dave,41
+c1,Company,Acme,

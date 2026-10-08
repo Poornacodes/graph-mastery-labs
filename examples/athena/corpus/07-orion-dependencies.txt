@@ -1,0 +1,1 @@
+Orion depends on MotionCore for arm trajectories. MotionCore in turn depends on SensorHub for synchronized sensor readings.

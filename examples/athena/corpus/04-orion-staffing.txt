@@ -1,0 +1,1 @@
+Dr. Vance, Tomas Lind, and Mei Chen work on Project Orion, Helios's next-generation warehouse picker. Luis Ortega works on Orion's simulation environment.

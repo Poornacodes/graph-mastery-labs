@@ -1,0 +1,14 @@
+Extract knowledge triples from the text as JSON. Use ONLY these types.
+
+Entity types:   Person, Company, Product
+Relation types: WORKS_AT, FOUNDED, ACQUIRED, COMPETES_WITH
+
+Return a JSON array of objects:
+  [{"head": "<entity>", "head_type": "<type>",
+    "relation": "<one of the allowed relations>",
+    "tail": "<entity>", "tail_type": "<type>"}]
+
+If no valid triple is present, return [].
+
+Text:
+{chunk}

@@ -1,0 +1,1 @@
+Mei Chen, Luis Ortega, and Okafor are members of the Motion Team. The Motion Team builds MotionCore, the motion-planning library that turns grasp targets into arm trajectories.

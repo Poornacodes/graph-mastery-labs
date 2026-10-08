@@ -1,0 +1,1 @@
+Atlas depends on VisionKit to read shelf labels and on FleetOS for mission scheduling. VisionKit depends on SensorHub for camera timing.

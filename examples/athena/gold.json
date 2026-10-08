@@ -1,0 +1,154 @@
+[
+ {
+  "type": "single-fact",
+  "question": "Who leads Project Atlas?",
+  "expected": [
+   "Patel"
+  ]
+ },
+ {
+  "type": "single-fact",
+  "question": "Which team builds VisionKit?",
+  "expected": [
+   "Perception Team"
+  ]
+ },
+ {
+  "type": "single-fact",
+  "question": "Which team builds MotionCore?",
+  "expected": [
+   "Motion Team"
+  ]
+ },
+ {
+  "type": "single-fact",
+  "question": "What does the Platform Team build?",
+  "expected": [
+   "FleetOS",
+   "SensorHub"
+  ]
+ },
+ {
+  "type": "single-fact",
+  "question": "Who leads Project Orion?",
+  "expected": [
+   "Okafor"
+  ]
+ },
+ {
+  "type": "single-fact",
+  "question": "What does MotionCore depend on?",
+  "expected": [
+   "SensorHub"
+  ]
+ },
+ {
+  "type": "single-fact",
+  "question": "What does the Helios Scanner depend on?",
+  "expected": [
+   "VisionKit",
+   "FleetOS"
+  ]
+ },
+ {
+  "type": "single-fact",
+  "question": "Which team is Ji-woo Park a member of?",
+  "expected": [
+   "Perception Team"
+  ]
+ },
+ {
+  "type": "single-fact",
+  "question": "Who works on Project Atlas?",
+  "expected": [
+   "Ji-woo Park",
+   "Aaron Brooks"
+  ]
+ },
+ {
+  "type": "single-fact",
+  "question": "What has Helios announced about the Helios Scanner?",
+  "expected": [
+   "pilot"
+  ]
+ },
+ {
+  "type": "single-fact",
+  "question": "Which team is Mei Chen a member of?",
+  "expected": [
+   "Motion Team"
+  ]
+ },
+ {
+  "type": "single-fact",
+  "question": "What does Atlas depend on?",
+  "expected": [
+   "VisionKit",
+   "FleetOS"
+  ]
+ },
+ {
+  "type": "multi-hop",
+  "question": "Who leads the project that Tomas Lind works on?",
+  "expected": [
+   "Okafor"
+  ]
+ },
+ {
+  "type": "multi-hop",
+  "question": "Which projects depend on a component the Platform Team builds?",
+  "expected": [
+   "Orion",
+   "Atlas"
+  ]
+ },
+ {
+  "type": "multi-hop",
+  "question": "Who worked on the project behind the Helios Picker?",
+  "expected": [
+   "Tomas Lind",
+   "Mei Chen",
+   "Luis Ortega"
+  ]
+ },
+ {
+  "type": "multi-hop",
+  "question": "Who is at risk of losing context now that Dr. Vance left the Orion project?",
+  "expected": [
+   "Tomas Lind",
+   "Mei Chen",
+   "Luis Ortega",
+   "Okafor"
+  ]
+ },
+ {
+  "type": "multi-hop",
+  "question": "Which team builds the component that the Helios Picker depends on?",
+  "expected": [
+   "Motion Team"
+  ]
+ },
+ {
+  "type": "multi-hop",
+  "question": "Which products depend on SensorHub, directly or indirectly?",
+  "expected": [
+   "Helios Picker",
+   "Helios Scanner"
+  ]
+ },
+ {
+  "type": "multi-hop",
+  "question": "Who leads the project that depends on VisionKit?",
+  "expected": [
+   "Patel"
+  ]
+ },
+ {
+  "type": "multi-hop",
+  "question": "Which teams do the people working on Project Atlas belong to?",
+  "expected": [
+   "Platform Team",
+   "Perception Team"
+  ]
+ }
+]

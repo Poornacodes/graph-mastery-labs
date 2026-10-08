@@ -1,0 +1,8 @@
+# Listing 6.3 — OWL property characteristics and disjointness
+@prefix ex:  <http://example.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ex:ancestorOf  a owl:TransitiveProperty .   # A→B and B→C imply A→C
+ex:spouseOf    a owl:SymmetricProperty .    # A→B implies B→A
+ex:parentOf    owl:inverseOf ex:childOf .   # each implies the other
+ex:Person      owl:disjointWith ex:Organization .  # nothing is both

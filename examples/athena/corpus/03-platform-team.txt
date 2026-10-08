@@ -1,0 +1,1 @@
+The Platform Team builds FleetOS, the mission scheduler for robot fleets, and SensorHub, the firmware layer that synchronizes camera and lidar readings. Aaron Brooks and Grace Kim are members of the Platform Team.

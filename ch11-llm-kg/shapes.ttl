@@ -1,0 +1,16 @@
+# SHACL shapes for the extracted graph (Chapter 6): every node has a name and
+# exactly one type; a WORKS_AT edge must point at a Company.
+@prefix kg: <http://graphmastery.example/kg/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+kg:EntityShape a sh:NodeShape ;
+  sh:targetClass kg:Entity ;
+  sh:property [ sh:path kg:name ; sh:minCount 1 ; sh:maxCount 1 ;
+                sh:datatype xsd:string ] ;
+  sh:property [ sh:path kg:type ; sh:minCount 1 ; sh:maxCount 1 ;
+                sh:in ( "Person" "Company" "Product" ) ] .
+
+kg:WorksAtShape a sh:NodeShape ;
+  sh:targetSubjectsOf kg:WORKS_AT ;
+  sh:property [ sh:path kg:WORKS_AT ; sh:class kg:Company ] .

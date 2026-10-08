@@ -1,0 +1,23 @@
+{
+  "_note": "The knowledge graph for this corpus. Chapter 11 shows how to extract these triples with an LLM; here they are written by hand so the lab runs with no model.",
+  "entities": {
+    "Ada Mensah":      {"type": "Person",  "aliases": ["Ada"]},
+    "Ben Okoro":       {"type": "Person",  "aliases": ["Ben"]},
+    "Lena Fischer":    {"type": "Person",  "aliases": []},
+    "Nimbus":          {"type": "Company", "aliases": []},
+    "Cirrus Systems":  {"type": "Company", "aliases": ["Cirrus"]},
+    "Cirrus Labs":     {"type": "Team",    "aliases": []},
+    "Stratus":         {"type": "Company", "aliases": []},
+    "Climate Data Summit": {"type": "Event", "aliases": []}
+  },
+  "triples": [
+    ["Ada Mensah",     "FOUNDED",     "Nimbus"],
+    ["Cirrus Systems", "ACQUIRED",    "Nimbus"],
+    ["Ben Okoro",      "CEO_OF",      "Cirrus Systems"],
+    ["Ben Okoro",      "WORKED_AT",   "Stratus"],
+    ["Cirrus Labs",    "PART_OF",     "Cirrus Systems"],
+    ["Lena Fischer",   "LEADS",       "Cirrus Labs"],
+    ["Ben Okoro",      "SPOKE_AT",    "Climate Data Summit"],
+    ["Ada Mensah",     "SPOKE_AT",    "Climate Data Summit"]
+  ]
+}

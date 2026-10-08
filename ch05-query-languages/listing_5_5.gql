@@ -1,0 +1,4 @@
+-- Listing 5.5 — GQL closely mirrors Cypher (ISO/IEC 39075).
+-- Few databases run GQL yet; this exact text also runs as Cypher in Neo4j.
+MATCH (a:Person {name: 'Alice'})-[:KNOWS]->(friend:Person)
+RETURN friend.name

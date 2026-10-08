@@ -1,0 +1,6 @@
+~id,~from,~to,~label,since:Int
+e1,p1,p2,knows,2019
+e2,p2,p3,knows,2020
+e3,p1,p4,knows,2021
+e4,p4,p3,knows,2022
+e5,p1,c1,worksAt,2020
