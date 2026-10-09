@@ -1,6 +1,6 @@
 """Try It Yourself 3.1 — the karate-club lab.
 
-Computes all four centralities and Louvain communities, renders Figure 3.2
+Computes all four centralities and Louvain communities, renders Figure 3.7
 to karate.png, and finds the brokers: high betweenness, low degree.
 """
 from pathlib import Path
@@ -37,7 +37,7 @@ for n in brokers:
 print("A broker has few connections, but they link otherwise-separate\n"
       "groups, so removing it fragments the network.")
 
-# Figure 3.2: shade by community, size by PageRank
+# Figure 3.7: shade by community, size by PageRank
 pos = nx.spring_layout(G, seed=7)
 shades = ["#222222", "#777777", "#bbbbbb", "#eeeeee"]
 plt.figure(figsize=(6, 5))

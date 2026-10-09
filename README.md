@@ -36,7 +36,7 @@ Neo4j Browser is at http://localhost:7474 (user `neo4j`, password
 | Book | Folder | What's there |
 |---|---|---|
 | Ch 2 | `ch02-graph-theory/` | Try It 2.1 with a NetworkX solution |
-| Ch 3 | `ch03-algorithms/` | Listings 3.1–3.6; Try It 3.1 (karate club, renders Figure 3.2) |
+| Ch 3 | `ch03-algorithms/` | Listings 3.1–3.6; Try It 3.1 (karate club, renders Figure 3.7) |
 | Ch 4 | `ch04-neo4j/` | Listings 4.1–4.9 with seed data; Try It 4.1 movie-ratings lab with an index-seek check |
 | Ch 5 | `ch05-query-languages/` | Listings 5.1–5.6 in Cypher, Gremlin, SPARQL, and GQL; Try It 5.1 runs all three |
 | Ch 6 | `ch06-knowledge-graphs/` | Listings 6.1–6.5 as Turtle; Try It 6.1 (reasoning and SHACL) |
@@ -48,7 +48,7 @@ Neo4j Browser is at http://localhost:7474 (user `neo4j`, password
 | Ch 12 | `ch12-production/` | Listing 12.1 Compose stack; Try It 12.1 steps and RPO/RTO journal |
 | Ch 13 | `ch13-neptune/` | Neptune notebook (Listings 13.1–13.2), bulk-load files, teardown checklist, and a free local path (Try It 13.1) |
 | Ch 14 | `ch14-neo4j/` | Neo4j operations labs (Try It 14.1): memory sizing, PROFILE diagnosis and fix (Listing 14.2), `neo4j-admin` bulk import of 1M nodes / 5M relationships, offline backup and verified restore |
-| Ch 15 | `ch15-capstones/` | Full rubric (Table 15.1), three capstone briefs, interview bank, two-minute-story template |
+| Ch 15 | `ch15-capstones/` | Full rubric (Table 15.2), three capstone briefs, interview bank, two-minute-story template |
 | App E | `examples/athena/` | Athena, the end-to-end GraphRAG knowledge platform |
 
 Appendix A's setup is `docker-compose.yml`, `requirements.txt`, and

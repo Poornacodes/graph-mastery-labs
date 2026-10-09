@@ -1,4 +1,4 @@
-# Capstone rubric (full version of Table 15.1)
+# Capstone rubric (full version of Table 15.2)
 
 Score each of the seven categories from 1 to 4. **Elite** means a total of at
 least 24 of 28 (85%) **and** no category below 3 (Proficient).
