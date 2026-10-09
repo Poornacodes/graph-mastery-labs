@@ -37,7 +37,7 @@ Neo4j Browser is at http://localhost:7474 (user `neo4j`, password
 |---|---|---|
 | Ch 2 | `ch02-graph-theory/` | Try It 2.1 with a NetworkX solution |
 | Ch 3 | `ch03-algorithms/` | Listings 3.1–3.6; Try It 3.1 (karate club, renders Figure 3.7) |
-| Ch 4 | `ch04-neo4j/` | Listings 4.1–4.9 with seed data; Try It 4.1 movie-ratings lab with an index-seek check |
+| Ch 4 | `ch04-neo4j/` | Listings 4.1–4.9 with seed data; Try It 4.1 movie-ratings lab with an index-seek check; `pg_vs_neo4j.py`, the PostgreSQL-versus-Neo4j comparison of §4.1.1 (Table 4.1) |
 | Ch 5 | `ch05-query-languages/` | Listings 5.1–5.6 in Cypher, Gremlin, SPARQL, and GQL; Try It 5.1 runs all three |
 | Ch 6 | `ch06-knowledge-graphs/` | Listings 6.1–6.5 as Turtle; Try It 6.1 (reasoning and SHACL) |
 | Ch 7 | `ch07-modeling-etl/` | Dataset generator, Listing 7.1 loader, Try It 7.1 idempotency check |

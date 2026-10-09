@@ -1,6 +1,8 @@
 // Listing 4.9 — PageRank and community detection with GDS
-// 1. Project a named in-memory graph
-CALL gds.graph.project('social', 'Person', 'FRIEND');
+// 1. Project a named in-memory graph; friendship is symmetric,
+//    so project FRIEND as undirected
+CALL gds.graph.project('social', 'Person',
+  {FRIEND: {orientation: 'UNDIRECTED'}});
 
 // 2. Run PageRank, writing scores back as a node property
 CALL gds.pageRank.write('social', {writeProperty: 'pagerank'})

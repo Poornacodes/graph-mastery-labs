@@ -1,6 +1,6 @@
 # Capstone rubric (full version of Table 15.2)
 
-Score each of the seven categories from 1 to 4. **Elite** means a total of at
+Score each of the seven categories from 1 to 4. **Expert** means a total of at
 least 24 of 28 (85%) **and** no category below 3 (Proficient).
 
 | Score | Level | Meaning |
@@ -8,7 +8,7 @@ least 24 of 28 (85%) **and** no category below 3 (Proficient).
 | 1 | Novice | Present but ad hoc, or missing |
 | 2 | Developing | Works, with clear gaps |
 | 3 | Proficient | Sound and complete for the scope |
-| 4 | Elite | Exemplary; shows judgment beyond the requirement |
+| 4 | Expert | Exemplary; shows judgment beyond the requirement |
 
 ## 1. Data model
 
@@ -84,4 +84,4 @@ least 24 of 28 (85%) **and** no category below 3 (Proficient).
 | AI integration | | |
 | Deployment and operations | | |
 | Documentation | | |
-| **Total (of 28)** | | Elite: ≥ 24 and nothing below 3 |
+| **Total (of 28)** | | Expert: ≥ 24 and nothing below 3 |

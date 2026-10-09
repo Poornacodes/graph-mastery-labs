@@ -17,6 +17,9 @@ pytest
 scikit-learn
 sentence-transformers
 
+# PostgreSQL client for the Chapter 4 comparison (ch04-neo4j/pg_vs_neo4j.py)
+psycopg[binary]>=3.1
+
 # Intel Macs: PyTorch stopped shipping x86 macOS builds after 2.2, and newer
 # numpy/transformers need a newer PyTorch. These limits apply only there.
 numpy<2 ; sys_platform == "darwin" and platform_machine == "x86_64"
