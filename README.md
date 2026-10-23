@@ -1,10 +1,51 @@
-# Graph Mastery Labs
+<p align="center">
+  <a href="https://www.amazon.com/Graph-Mastery-Era-Databases-Connections/dp/B0HNTP3TBM"><img src="assets/book-cover.jpg" alt="Graph Mastery for the AI Era, by Poorna" width="280"></a>
+</p>
 
-The companion repository for ***Graph Mastery for the AI Era: From Graph
-Theory to GraphRAG*** by Poorna. Every code listing in the book, every
-*Try It Yourself* lab with its data and a worked solution, the end-to-end
-GraphRAG example from Appendix E, and the capstone rubric, briefs, and
-interview bank from Chapter 15.
+<h1 align="center">Graph Mastery Labs</h1>
+
+<p align="center">
+  The companion code for <b><i>Graph Mastery for the AI Era</i></b><br>
+  <i>From Graph Theory to GraphRAG: Build Graph Databases, Knowledge Graphs, and AI That Reasons Over Connections</i><br>
+  by Poorna
+</p>
+
+<p align="center">
+  <a href="https://www.amazon.com/Graph-Mastery-Era-Databases-Connections/dp/B0HNTP3TBM"><img src="https://img.shields.io/badge/Get_the_book-on_Amazon-FF9900?style=for-the-badge&logo=amazon&logoColor=white" alt="Get the book on Amazon"></a>
+</p>
+
+## About the book
+
+AI with context, recommendations, fraud detection: they all run on
+connections, and connections run on graphs. *Graph Mastery for the AI Era*
+takes you from your first node to production GraphRAG in one continuous,
+hands-on path, building every idea from first principles and running real
+code on a free, open-source stack. This repository is that code.
+
+**You'll learn to:**
+
+- Think in graphs and pick the right algorithm: BFS, Dijkstra, PageRank, Louvain
+- Model and query graphs in Cypher, SPARQL, Gremlin, and GQL
+- Build knowledge graphs with RDF, OWL ontologies, SHACL, and reasoning
+- Design graph models, ETL pipelines, APIs, and visualizations for real applications
+- Ground LLMs with GraphRAG: multi-hop, cited, explainable answers
+- Train graph neural networks and build knowledge graphs from text with LLMs
+- Run graphs in production: Neo4j in depth, and the cloud on AWS Neptune and Amazon Bedrock
+
+**Who it's for:** software, data, and AI/ML engineers, architects, and
+career-switchers. All you need is basic programming in any language: no prior
+graph, database, or advanced math experience.
+
+The book has 15 chapters in seven parts, 68 diagrams, end-of-chapter
+exercises with full worked solutions, and an end-to-end GraphRAG build.
+Get your copy here:
+**[Graph Mastery for the AI Era on Amazon](https://www.amazon.com/Graph-Mastery-Era-Databases-Connections/dp/B0HNTP3TBM)**.
+
+## What's in this repository
+
+Every code listing in the book, every *Try It Yourself* lab with its data and
+a worked solution, the end-to-end GraphRAG example from Appendix E, and the
+capstone rubric, briefs, and interview bank from Chapter 15.
 
 Everything runs on your own machine with free, open-source software. No paid
 account is needed: the labs that use a language model also run in an
@@ -93,6 +134,10 @@ Set `LLM_PROVIDER` in `.env`:
 
 Open an issue on this repository. Corrections to the book's listings are
 fixed here first.
+
+If these labs help you, the book explains the *why* behind every one of them:
+**[get Graph Mastery for the AI Era on Amazon](https://www.amazon.com/Graph-Mastery-Era-Databases-Connections/dp/B0HNTP3TBM)**. And if you've read
+it, a review on Amazon helps other engineers find it.
 
 ## License
 
