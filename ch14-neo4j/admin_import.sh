@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Try It Yourself 14.1, part 3 — build a database offline with neo4j-admin
+# Listing 14.3. Try It Yourself 14.1, part 3 — build a database offline with neo4j-admin
 # import, into a throwaway volume (your lab database is not touched), then
 # start it on ports 17474/17687, count what arrived, and clean up.
 set -euo pipefail

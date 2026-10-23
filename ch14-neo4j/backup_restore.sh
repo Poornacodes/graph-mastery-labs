@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Try It Yourself 14.1, part 4 — an offline backup and a verified restore.
+# Listing 14.4. Try It Yourself 14.1, part 4 — an offline backup and a verified restore.
 # Community Edition dumps a stopped database: stop the lab Neo4j, dump its
 # volume, start it again; then load the dump into a THROWAWAY volume and
 # count its nodes, proving the backup restores. Your lab data is not changed.

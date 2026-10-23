@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Try It Yourself 14.1, part 1 — ask Neo4j how to size its memory for a
+# Listing 14.1. Try It Yourself 14.1, part 1 — ask Neo4j how to size its memory for a
 # machine with the given RAM (default 8g), based on your actual store size.
 docker exec gm-neo4j neo4j-admin server memory-recommendation --memory="${1:-8g}"
 echo

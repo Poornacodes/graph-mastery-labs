@@ -46,8 +46,8 @@ Neo4j Browser is at http://localhost:7474 (user `neo4j`, password
 | Ch 10 | `ch10-graph-ml/` | Listing 10.1 (GDS node2vec), 10.2 (link prediction, completed), 10.3 (GCN on Cora, optional) |
 | Ch 11 | `ch11-llm-kg/` | Listings 11.1–11.2; Try It 11.1: extract, resolve, load, query, validate |
 | Ch 12 | `ch12-production/` | Listing 12.1 Compose stack; Try It 12.1 steps and RPO/RTO journal |
-| Ch 13 | `ch13-neptune/` | Neptune notebook (Listings 13.1–13.2), bulk-load files, teardown checklist, and a free local path (Try It 13.1) |
-| Ch 14 | `ch14-neo4j/` | Neo4j operations labs (Try It 14.1): memory sizing, PROFILE diagnosis and fix (Listing 14.2), `neo4j-admin` bulk import of 1M nodes / 5M relationships, offline backup and verified restore |
+| Ch 13 | `ch13-neptune/` | Neptune notebook (Listings 13.1–13.2), the two reference architectures (Listings 13.3–13.4, `ARCHITECTURE.md`), bulk-load files, teardown checklist, and a free local path (Try It 13.1) |
+| Ch 14 | `ch14-neo4j/` | Neo4j operations labs (Try It 14.1): memory sizing (Listing 14.1, `memory.sh`), PROFILE diagnosis and fix (Listing 14.2, `profile_lab.py`), `neo4j-admin` bulk import of 1M nodes / 5M relationships (Listing 14.3, `admin_import.sh`), offline backup and verified restore (Listing 14.4, `backup_restore.sh`) |
 | Ch 15 | `ch15-capstones/` | Full rubric (Table 15.2), three capstone briefs, interview bank, two-minute-story template |
 | App E | `examples/athena/` | Athena, the end-to-end GraphRAG knowledge platform |
 
